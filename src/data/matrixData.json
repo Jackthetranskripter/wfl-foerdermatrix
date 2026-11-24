@@ -1,0 +1,2528 @@
+{
+  "meta": {
+    "title": "Fördermatrix Startup- & Neuunternehmerförderung Luzern",
+    "source": "Startupfoerderung_Luzern_Matrix_v2.1.xlsx (Blätter «Matrix v2», «Review v1», «Lücken»)",
+    "stand": "15.10.2026 (Matrix v2); CSEM & Deep Tech Nation ergänzt 11/2026",
+    "legend": "K = Kernangebot · W = wichtiger Beitrag · R = Randangebot · – = kein Angebot · ? = unklar/zu klären. Zeilen 'NEU' = in v1 nicht enthalten. Stand 15.10.2026",
+    "readingNote": "Lesehilfe: Zählung zeigt Breite, nicht Qualität oder Zugänglichkeit. P6 bleibt praktisch ohne Kernangebot."
+  },
+  "ratings": {
+    "K": {
+      "label": "Kernangebot"
+    },
+    "W": {
+      "label": "Wichtiger Beitrag"
+    },
+    "R": {
+      "label": "Randangebot"
+    },
+    "?": {
+      "label": "Unklar / zu klären"
+    },
+    "–": {
+      "label": "Kein Angebot"
+    }
+  },
+  "levels": [
+    {
+      "id": "LU",
+      "label": "Kanton Luzern"
+    },
+    {
+      "id": "ZCH",
+      "label": "Zentralschweiz"
+    },
+    {
+      "id": "CH",
+      "label": "Schweiz"
+    }
+  ],
+  "phases": [
+    {
+      "id": "P0",
+      "label": "Sensibilisierung & Inspiration",
+      "title": "P0 Sensibilisierung & Inspiration",
+      "description": "Unternehmertum sichtbar machen, Vorbilder, erste Berührung"
+    },
+    {
+      "id": "P1",
+      "label": "Idee & Validierung",
+      "title": "P1 Idee & Validierung",
+      "description": "Geschäftsidee schärfen, Markt testen, Businessmodell"
+    },
+    {
+      "id": "P2",
+      "label": "Gründung & Nachgründungs-Setup",
+      "title": "P2 Gründung & Nachgründungs-Setup",
+      "description": "Rechtsform, Eintrag, AHV, MWST, Versicherungen, Treuhand"
+    },
+    {
+      "id": "P3a",
+      "label": "Frühfinanzierung (nicht verwässernd: Grants, Preise, Kredite, Bürgschaften)",
+      "title": "P3a Frühfinanzierung (nicht verwässernd: Grants, Preise, Kredite, Bürgschaften)",
+      "description": "Grants, Preise, Kredite, Bürgschaften – ohne Anteilsabgabe"
+    },
+    {
+      "id": "P3b",
+      "label": "Beteiligungskapital (Pre-Seed bis Series A)",
+      "title": "P3b Beteiligungskapital (Pre-Seed bis Series A)",
+      "description": "Business Angels, VC – Pre-Seed bis Series A"
+    },
+    {
+      "id": "P4",
+      "label": "Markteintritt & Wachstum",
+      "title": "P4 Markteintritt & Wachstum",
+      "description": "Erste Kunden, Team, Räume, Pilotprojekte"
+    },
+    {
+      "id": "P5",
+      "label": "Skalierung & Internationalisierung",
+      "title": "P5 Skalierung & Internationalisierung",
+      "description": "Wachstumskapital, Export, neue Märkte"
+    },
+    {
+      "id": "P6",
+      "label": "Krise, Nachfolge, Exit",
+      "title": "P6 Krise, Nachfolge, Exit",
+      "description": "Turnaround, Sanierung, Nachfolge, Verkauf, Löschung"
+    }
+  ],
+  "types": [
+    {
+      "dimmedPhases": [
+        "P3b"
+      ],
+      "id": "existenz",
+      "label": "Klassische Existenzgründung",
+      "short": "Existenzgründung",
+      "description": "Gewerbe, Dienstleistung, kleine Gastro – Einzelunternehmen oder GmbH ohne Investorenfokus.",
+      "criteria": "Lokales Geschäftsmodell, Finanzierung über Eigenmittel, Bank und Bürgschaft; keine Beteiligungsfinanzierung geplant.",
+      "focus": [
+        "ifj",
+        "wfl",
+        "bgm",
+        "bank",
+        "ahv",
+        "beh",
+        "treu",
+        "kgv",
+        "zks"
+      ],
+      "conditional": [
+        "aks",
+        "preise",
+        "ige",
+        "crowd",
+        "ihk"
+      ],
+      "excludedCells": {
+        "crowd": [
+          "P3b"
+        ],
+        "wfl": [
+          "P3b",
+          "P5"
+        ],
+        "bank": [
+          "P5"
+        ],
+        "bgm": [
+          "P5"
+        ],
+        "ifj": [
+          "P0"
+        ]
+      },
+      "hint": "Beteiligungskapital (P3b) ist für klassische Existenzgründungen i. d. R. kein Thema und wird ausgegraut."
+    },
+    {
+      "dimmedPhases": [],
+      "id": "startup",
+      "label": "Skalierbares Startup",
+      "short": "Skalierbares Startup",
+      "description": "Nicht-Tech: Konsumgüter, Service, Plattform – skalierbares Modell, offen für Investoren.",
+      "criteria": "Skalierbares Geschäftsmodell ohne eigenen F&E-/IP-Kern; Wachstum über Markt, Marke, Plattform; Angels/Crowd denkbar.",
+      "focus": [
+        "zuender",
+        "wfl",
+        "vci",
+        "angels",
+        "crowd",
+        "pilot",
+        "preise",
+        "vlab",
+        "treu",
+        "ahv",
+        "beh"
+      ],
+      "conditional": [
+        "itz",
+        "fmap",
+        "ifj",
+        "bank",
+        "bgm",
+        "aks",
+        "inno",
+        "ige",
+        "sge",
+        "serv",
+        "ihk",
+        "tp",
+        "ai",
+        "dtn"
+      ],
+      "excludedCells": {
+        "inno": [
+          "P3a"
+        ]
+      },
+      "hint": null
+    },
+    {
+      "dimmedPhases": [],
+      "id": "tech",
+      "label": "Tech- & DeepTech-Startup",
+      "short": "Tech & DeepTech",
+      "description": "Innovationsgetrieben – F&E, Technologie, IP; hoher Kapitalbedarf.",
+      "criteria": "Geschäftsmodell beruht auf eigener Technologie, F&E oder Schutzrechten (Patente); typisch Innosuisse, Venture Kick, Angels, VC.",
+      "focus": [
+        "itz",
+        "fmap",
+        "zuender",
+        "tp",
+        "sipc",
+        "inno",
+        "vlab",
+        "vci",
+        "angels",
+        "vc",
+        "pilot",
+        "ige",
+        "csem"
+      ],
+      "conditional": [
+        "ifj",
+        "wfl",
+        "bank",
+        "bgm",
+        "ahv",
+        "beh",
+        "treu",
+        "aks",
+        "preise",
+        "ai",
+        "sge",
+        "serv",
+        "ihk",
+        "lif",
+        "crowd",
+        "grs",
+        "dtn"
+      ],
+      "excludedCells": {
+        "crowd": [
+          "P1",
+          "P3a"
+        ]
+      },
+      "hint": null
+    },
+    {
+      "dimmedPhases": [],
+      "id": "spinoff",
+      "label": "Hochschul-Spin-off",
+      "short": "Hochschul-Spin-off",
+      "description": "Aus HSLU oder Forschung – Studierende, Alumni, Mitarbeitende.",
+      "criteria": "Vorhaben entsteht an der HSLU oder in einer Forschungseinrichtung; Fokus frühe Phasen (Smart-up, Gebert Rüf, Innosuisse).",
+      "focus": [
+        "smartup",
+        "grs",
+        "inno",
+        "vlab",
+        "itz",
+        "fmap",
+        "sipc",
+        "ige",
+        "zuender"
+      ],
+      "conditional": [
+        "tp",
+        "vci",
+        "angels",
+        "vc",
+        "pilot",
+        "ifj",
+        "wfl",
+        "ahv",
+        "beh",
+        "treu",
+        "preise",
+        "aks",
+        "sge",
+        "csem"
+      ],
+      "excludedCells": {
+        "vc": [
+          "P6",
+          "P5"
+        ],
+        "sipc": [
+          "P5"
+        ]
+      },
+      "hint": "Spin-off mit Tech-Fokus? Ab P3b lohnt sich zusätzlich der Blick auf «Tech & DeepTech»."
+    },
+    {
+      "dimmedPhases": [
+        "P0",
+        "P1",
+        "P2"
+      ],
+      "id": "kmu",
+      "label": "KMU im Wachstum / Nachfolge & Transformation",
+      "short": "KMU Wachstum & Nachfolge",
+      "description": "Bestehende Unternehmen (> 2–3 Jahre): Wachstum, Innovation, Export, Nachfolge.",
+      "criteria": "Firma besteht bereits; Themen sind Wachstumsfinanzierung, Innovationsprojekte, Internationalisierung, Nachfolge oder Umbau.",
+      "focus": [
+        "wfl",
+        "itz",
+        "bgm",
+        "bank",
+        "zks",
+        "treu",
+        "beh",
+        "kgv",
+        "lif",
+        "sge",
+        "serv",
+        "ihk"
+      ],
+      "conditional": [
+        "ai",
+        "tp",
+        "sipc",
+        "inno",
+        "nrp",
+        "vc",
+        "aks",
+        "csem"
+      ],
+      "excludedCells": {
+        "wfl": [
+          "P0",
+          "P1",
+          "P2"
+        ],
+        "itz": [
+          "P0",
+          "P1",
+          "P2"
+        ],
+        "bgm": [
+          "P2"
+        ],
+        "bank": [
+          "P2"
+        ],
+        "treu": [
+          "P1",
+          "P2"
+        ],
+        "beh": [
+          "P2"
+        ],
+        "inno": [
+          "P1"
+        ],
+        "tp": [
+          "P1",
+          "P2",
+          "P3a",
+          "P3b"
+        ],
+        "vc": [
+          "P3b",
+          "P5"
+        ],
+        "aks": [
+          "P3a"
+        ],
+        "ihk": [
+          "P0"
+        ],
+        "csem": [
+          "P0",
+          "P1",
+          "P2",
+          "P3a",
+          "P5"
+        ]
+      },
+      "hint": "Gründungsphasen P0–P2 sind für bestehende KMU i. d. R. nicht relevant und werden ausgegraut."
+    }
+  ],
+  "filters": [
+    {
+      "id": "frauen",
+      "label": "Gründerinnen",
+      "actor": "saffa",
+      "description": "Blendet BG-SAFFA ein: Bürgschaft bis CHF 1 Mio. für Unternehmen mit ≥ 50 % in Frauenhand."
+    },
+    {
+      "id": "cleantech",
+      "label": "CleanTech",
+      "actor": "tf",
+      "description": "Blendet den Technologiefonds ein: Bürgschaften bis CHF 3 Mio. für marktnahe CleanTech-Innovationen."
+    },
+    {
+      "id": "rav",
+      "label": "Gründung aus Arbeitslosigkeit",
+      "actor": "rav",
+      "description": "Blendet RAV-Instrumente ein: Planungsphase bis 90 Taggelder, Bürgschaftsgarantie via BG. Gesuch innert 19 Wochen kontrollierter Arbeitslosigkeit."
+    }
+  ],
+  "gaps": [
+    {
+      "id": 1,
+      "phaseOriginal": "P3a",
+      "phases": [
+        "P3a"
+      ],
+      "crossPhase": false,
+      "segment": "Neuunternehmer",
+      "title": "Klassischer Finanzierungspfad unsichtbar: Bankkredit + BG Mitte + RAV-Planungsphase/Bürgschaftsgarantie",
+      "evidence": "BG Mitte/Banken in v1 leer; in der ITZ-Map fehlen BG Mitte, LUKB-Kredite und RAV; ITZ-Map beginnt bei CHF 50–100K",
+      "priority": "Hoch",
+      "measure": "WFL-'Finanzierungspfad Neuunternehmer' (1 Seite): Eigenmittel → Bank → BG → RAV; feste Ansprechpersonen bei BG Mitte und LUKB",
+      "lead": "WFL",
+      "effort": "gering",
+      "types": [
+        "existenz"
+      ],
+      "filters": [
+        "rav"
+      ]
+    },
+    {
+      "id": 2,
+      "phaseOriginal": "P3a/P3b",
+      "phases": [
+        "P3a",
+        "P3b"
+      ],
+      "crossPhase": false,
+      "segment": "Startup",
+      "title": "Navigation statt Information: Wer führt durch die Reihenfolge Innosuisse Initial Coaching → Venture Kick → Stiftungen/Preise → Angels?",
+      "evidence": "ITZ-Map zeigt das Angebot, nicht die Reihenfolge; verweist selbst auf Innovation Sparring",
+      "priority": "Hoch",
+      "measure": "Rollenteilung WFL (Triage, Erstgespräch) / ITZ (Innovation Sparring) festlegen; Funding Map in WFL-Beratung und Website einbinden",
+      "lead": "WFL + ITZ",
+      "effort": "gering",
+      "types": [
+        "startup",
+        "tech",
+        "spinoff"
+      ],
+      "filters": []
+    },
+    {
+      "id": 3,
+      "phaseOriginal": "P2",
+      "phases": [
+        "P2"
+      ],
+      "crossPhase": false,
+      "segment": "beide",
+      "title": "Nachgründungs-Setup: AHV-Anerkennung, MWST, BVG/UVG, Treuhand",
+      "evidence": "Kein Akteur in v1; IFJ endet beim Handelsregistereintrag",
+      "priority": "Hoch",
+      "measure": "Checkliste 'Erste 100 Tage nach Gründung' + kuratierte Treuhand-/Notariatsliste (z. B. mit TREUHAND|SUISSE Sektion)",
+      "lead": "WFL",
+      "effort": "gering",
+      "types": [
+        "existenz",
+        "startup",
+        "tech",
+        "spinoff"
+      ],
+      "filters": []
+    },
+    {
+      "id": 4,
+      "phaseOriginal": "alle",
+      "phases": [],
+      "crossPhase": true,
+      "segment": "beide",
+      "title": "Koordination & Governance des Ökosystems",
+      "evidence": "Viele Akteure, keine Fallübergaben, keine gemeinsamen KPIs; Regierungsrat beantragte 04/2026 Luzern Innovation Foundation (CHF 24 Mio., u. a. Koordination)",
+      "priority": "Hoch",
+      "measure": "Matrix v2 als Arbeitsgrundlage für die Foundation einbringen; gemeinsames Fall-Routing definieren",
+      "lead": "WFL / Kanton",
+      "effort": "mittel",
+      "types": [
+        "existenz",
+        "startup",
+        "tech",
+        "spinoff",
+        "kmu"
+      ],
+      "filters": []
+    },
+    {
+      "id": 5,
+      "phaseOriginal": "P3b",
+      "phases": [
+        "P3b"
+      ],
+      "crossPhase": false,
+      "segment": "Startup",
+      "title": "Regionales Seed-Kapital CHF 0.5–3 Mio. und Zugang zu nationalen VCs",
+      "evidence": "Regional nur Venture Club Innerschweiz; ITZ-Map listet VC/Family Offices nur als Zählwert",
+      "priority": "Mittel–hoch",
+      "measure": "Investor-Days mit nationalen Syndikaten (SICTIC, Swisspreneur) in Luzern; Co-Investitionsmodell prüfen",
+      "lead": "ITZ / Foundation",
+      "effort": "hoch",
+      "types": [
+        "startup",
+        "tech",
+        "spinoff"
+      ],
+      "filters": []
+    },
+    {
+      "id": 6,
+      "phaseOriginal": "P6",
+      "phases": [
+        "P6"
+      ],
+      "crossPhase": false,
+      "segment": "beide",
+      "title": "Krise, Turnaround, Nachfolge: kein Angebot",
+      "evidence": "Kein einziges Kernangebot in Matrix v2 (Zählzeile P6)",
+      "priority": "Mittel–hoch",
+      "measure": "Frühwarn-/Krisenberatung (Erstgespräch + Verweis Treuhand/Sanierung) und Nachfolgevermittlung in WFL-Angebot aufnehmen",
+      "lead": "WFL + Verbände",
+      "effort": "mittel",
+      "types": [
+        "existenz",
+        "startup",
+        "tech",
+        "spinoff",
+        "kmu"
+      ],
+      "filters": []
+    },
+    {
+      "id": 7,
+      "phaseOriginal": "P4",
+      "phases": [
+        "P4"
+      ],
+      "crossPhase": false,
+      "segment": "beide",
+      "title": "Peer-Netzwerk Founder-to-Founder (unbefristet)",
+      "evidence": "Alle Angebote sind zeitlich begrenzte, institutionelle Formate",
+      "priority": "Mittel",
+      "measure": "Alumni-Format aus zünder/Smart-up/Neuunternehmerpreis aufbauen",
+      "lead": "ITZ + HSLU",
+      "effort": "gering",
+      "types": [
+        "existenz",
+        "startup",
+        "tech",
+        "spinoff"
+      ],
+      "filters": []
+    },
+    {
+      "id": 8,
+      "phaseOriginal": "P5",
+      "phases": [
+        "P5"
+      ],
+      "crossPhase": false,
+      "segment": "beide",
+      "title": "Internationalisierung",
+      "evidence": "S-GE, SERV, IHK-Exportdokumente nicht verankert",
+      "priority": "Mittel",
+      "measure": "Feste Verweise + gemeinsamer Export-Anlass mit S-GE/IHK",
+      "lead": "WFL + IHK",
+      "effort": "gering",
+      "types": [
+        "startup",
+        "tech",
+        "spinoff",
+        "kmu"
+      ],
+      "filters": []
+    },
+    {
+      "id": 9,
+      "phaseOriginal": "P4",
+      "phases": [
+        "P4"
+      ],
+      "crossPhase": false,
+      "segment": "Startup",
+      "title": "Pilotkunden / Corporate-Zugang",
+      "evidence": "Wenige Konzernhauptsitze in LU; Kickstart/Tenity national",
+      "priority": "Mittel",
+      "measure": "Regionale Venture-Client-Runde mit Luzerner Grossfirmen und öffentlicher Hand (Beschaffung)",
+      "lead": "WFL / Foundation",
+      "effort": "mittel",
+      "types": [
+        "startup",
+        "tech",
+        "spinoff"
+      ],
+      "filters": []
+    },
+    {
+      "id": 10,
+      "phaseOriginal": "P1/P3a",
+      "phases": [
+        "P1",
+        "P3a"
+      ],
+      "crossPhase": false,
+      "segment": "Zielgruppen",
+      "title": "Gründerinnen, Gründungen aus Arbeitslosigkeit, Quereinsteiger",
+      "evidence": "BG-SAFFA und RAV-Instrumente nicht sichtbar",
+      "priority": "Mittel",
+      "measure": "Zielgruppenseiten / Merkblätter",
+      "lead": "WFL",
+      "effort": "gering",
+      "types": [
+        "existenz"
+      ],
+      "filters": [
+        "frauen",
+        "rav"
+      ]
+    },
+    {
+      "id": 11,
+      "phaseOriginal": "alle",
+      "phases": [],
+      "crossPhase": true,
+      "segment": "–",
+      "title": "Monitoring: keine Kennzahlen zu Gründungen, Weiterleitungen, Überlebensrate",
+      "evidence": "Matrix ist rein qualitativ, ohne Quellen und Stand",
+      "priority": "Mittel",
+      "measure": "Minimal-KPI-Set: Erstgespräche, Weiterleitungen nach Akteur, Gründungen, Überlebensrate nach 3 Jahren",
+      "lead": "WFL",
+      "effort": "mittel",
+      "types": [
+        "existenz",
+        "startup",
+        "tech",
+        "spinoff",
+        "kmu"
+      ],
+      "filters": []
+    },
+    {
+      "id": 12,
+      "phaseOriginal": "P0",
+      "phases": [
+        "P0"
+      ],
+      "crossPhase": false,
+      "segment": "beide",
+      "title": "Sensibilisierung (Schulen, Uni Luzern, Berufsbildung)",
+      "evidence": "Nur Smart-up (HSLU) und Events",
+      "priority": "Niedrig–mittel",
+      "measure": "Mit Bildungsakteuren abklären",
+      "lead": "Kanton / Hochschulen",
+      "effort": "mittel",
+      "types": [
+        "existenz",
+        "startup",
+        "tech",
+        "spinoff"
+      ],
+      "filters": []
+    },
+    {
+      "id": 13,
+      "phaseOriginal": "P1/P2",
+      "phases": [
+        "P1",
+        "P2"
+      ],
+      "crossPhase": false,
+      "segment": "beide",
+      "title": "IP-Schutz (Marken, Patente)",
+      "evidence": "IGE nicht erwähnt",
+      "priority": "Niedrig",
+      "measure": "Verweis auf begleitete Patentrecherche des IGE",
+      "lead": "WFL",
+      "effort": "gering",
+      "types": [
+        "existenz",
+        "startup",
+        "tech",
+        "spinoff"
+      ],
+      "filters": []
+    }
+  ],
+  "actors": [
+    {
+      "id": "ifj",
+      "name": "IFJ (Institut für Jungunternehmen)",
+      "short": "IFJ",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "beide",
+      "inOldMatrix": "ja",
+      "isNew": false,
+      "remark": "Generalist, kein Luzern-spezifisches Angebot",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "R",
+          "text": "Startimpuls-Events, Tag des Gründens"
+        },
+        "P1": {
+          "rating": "K",
+          "text": "Businessplan-Tool, Checklisten, Kurse"
+        },
+        "P2": {
+          "rating": "K",
+          "text": "Online-Gründungsservice, HR-Änderungen, Domizil"
+        },
+        "P3a": {
+          "rating": "R",
+          "text": "Partner-Rabatte, verweist auf Venture Kick (kein eigenes Kapital)"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Kurse, Fachreferate, Networking"
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "zuender",
+      "name": "*zünder accelerator (ITZ)",
+      "short": "*zünder",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "ZCH"
+      ],
+      "ebeneOriginal": "ZCH",
+      "segment": "Startup",
+      "inOldMatrix": "ja",
+      "isNew": false,
+      "remark": "v1 nennt CHF 15'000 Preisgeld und 'Programmphase 1 / 4' – in aktueller Kommunikation (WFL-News 05.03.2026) nicht so beschrieben → prüfen",
+      "remarkType": "zu verifizieren",
+      "cells": {
+        "P0": {
+          "rating": "R",
+          "text": "startup day (Sichtbarkeit)"
+        },
+        "P1": {
+          "rating": "R",
+          "text": "nur für bereits gegründete Firmen (< 2 J.)"
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Preisgeld (Betrag aktuell nicht publiziert)"
+        },
+        "P3b": {
+          "rating": "W",
+          "text": "Investoren-Netzwerk, Pitch-Training"
+        },
+        "P4": {
+          "rating": "K",
+          "text": "Workshops & Einzelcoaching (8 Monate)"
+        },
+        "P5": {
+          "rating": "R",
+          "text": "Skalierungsthemen im Coaching"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "itz",
+      "name": "ITZ (InnovationsTransfer Zentralschweiz)",
+      "short": "ITZ",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "ZCH"
+      ],
+      "ebeneOriginal": "ZCH",
+      "segment": "beide (innovationsgetrieben)",
+      "inOldMatrix": "ja",
+      "isNew": false,
+      "remark": "Stundenumfang Sparring-Check (v1: 20 h gratis) prüfen; ITZ ist zugleich Betreiber von zünder und Funding Map",
+      "remarkType": "zu verifizieren",
+      "cells": {
+        "P0": {
+          "rating": "R",
+          "text": "Events, Auftritte"
+        },
+        "P1": {
+          "rating": "K",
+          "text": "Sparring-Check für Privatpersonen"
+        },
+        "P2": {
+          "rating": "R",
+          "text": "Planung im Gründungsumfeld"
+        },
+        "P3a": {
+          "rating": "K",
+          "text": "Funding Map + Innovation Sparring"
+        },
+        "P3b": {
+          "rating": "W",
+          "text": "Vermittlung zu Investoren"
+        },
+        "P4": {
+          "rating": "K",
+          "text": "Innovationssparring für KMU"
+        },
+        "P5": {
+          "rating": "W",
+          "text": "neue Geschäftsfelder"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "fmap",
+      "name": "ITZ Funding Map (Tool, Beta)",
+      "short": "ITZ Funding Map",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH mit ZCH-Filter",
+      "segment": "Startup (innovativ)",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Informationswerkzeug, kein Akteur. Details siehe Blatt 'ITZ Funding Map'",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "K",
+          "text": "35 Grants/Stiftungen, 17 mit ZCH-Bezug, inkl. Bürgschaften"
+        },
+        "P3b": {
+          "rating": "W",
+          "text": "Angels namentlich; VC/Family Offices nur gezählt"
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "R",
+          "text": "Series A+/CVC nur als Zählwert"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "ai",
+      "name": "Digital & AI Community",
+      "short": "Digital & AI Community",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "ZCH"
+      ],
+      "ebeneOriginal": "ZCH",
+      "segment": "Querschnitt",
+      "inOldMatrix": "ja",
+      "isNew": false,
+      "remark": "Querschnittsthema – als Phasenakteur überbewertet, Gewicht reduzieren",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "R",
+          "text": "Events"
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "KI-/Digitalkompetenz, Workshops"
+        },
+        "P5": {
+          "rating": "R",
+          "text": "Netzwerk"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "wfl",
+      "name": "Wirtschaftsförderung Luzern (WFL)",
+      "short": "WFL",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "beide",
+      "inOldMatrix": "ja",
+      "isNew": false,
+      "remark": "Selbstbewertung durch WFL = Bias-Risiko. 'Kredite & Bürgschaften' in der ITZ-Map intern klären (stimmt der Eintrag?)",
+      "remarkType": "zu verifizieren",
+      "cells": {
+        "P0": {
+          "rating": "R",
+          "text": "Unternehmer-Community"
+        },
+        "P1": {
+          "rating": "W",
+          "text": "Geschäftsmodell-Beratung"
+        },
+        "P2": {
+          "rating": "W",
+          "text": "EasyGov, Verweis IFJ, Beratung & Vernetzung"
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Mikrokredite & Darlehen von Stiftungen"
+        },
+        "P3b": {
+          "rating": "R",
+          "text": "Verweis"
+        },
+        "P4": {
+          "rating": "K",
+          "text": "Standortsuche, Netzwerk"
+        },
+        "P5": {
+          "rating": "W",
+          "text": "Ansiedlung, Standortentwicklung, Netzwerk"
+        },
+        "P6": {
+          "rating": "W",
+          "text": "Nachfolge Sensibilisierung und Netzwerk"
+        }
+      }
+    },
+    {
+      "id": "tp",
+      "name": "Technopark Luzern (D4 Root)",
+      "short": "Technopark Luzern",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "Startup (Tech)",
+      "inOldMatrix": "ja",
+      "isNew": false,
+      "remark": "'Unterstützung bei Finanzierung' konkretisieren – was genau?",
+      "remarkType": "zu verifizieren",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "R",
+          "text": "Coworking"
+        },
+        "P2": {
+          "rating": "W",
+          "text": "Startup-Büros, Community"
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Coaching zu Finanzierung, Netzwerk VCI"
+        },
+        "P3b": {
+          "rating": "R",
+          "text": "Netzwerk"
+        },
+        "P4": {
+          "rating": "K",
+          "text": "mitwachsende Team-Offices"
+        },
+        "P5": {
+          "rating": "W",
+          "text": "Scale-up-Fokus"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "smartup",
+      "name": "Smart-up (HSLU)",
+      "short": "Smart-up (HSLU)",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "Startup (hochschulnah)",
+      "inOldMatrix": "ja",
+      "isNew": false,
+      "remark": "Umfang Gratis-Coaching (v1: 7 h) prüfen",
+      "remarkType": "zu verifizieren",
+      "cells": {
+        "P0": {
+          "rating": "W",
+          "text": "Start-up-Track im Studium, Business Concept und Entrepreneur Module"
+        },
+        "P1": {
+          "rating": "K",
+          "text": "Ideation, Business Model, Coaching"
+        },
+        "P2": {
+          "rating": "R",
+          "text": "Workshop 'Von der Idee zum Handeln'"
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "'Get Funding'-Event; Brücke zu div. Finanzpartner"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "bgm",
+      "name": "BG Mitte (Bürgschaftsgenossenschaft)",
+      "short": "BG Mitte",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "ZCH"
+      ],
+      "ebeneOriginal": "Region",
+      "segment": "beide (v.a. KMU/Neuunternehmer)",
+      "inOldMatrix": "ja (leer)",
+      "isNew": false,
+      "remark": "In v1 leer – für klassische Neuunternehmer das wichtigste Instrument. Fehlt auch in der ITZ-Map!",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "R",
+          "text": "Prüfung Finanzierungsplan"
+        },
+        "P3a": {
+          "rating": "K",
+          "text": "Bürgschaft gegenüber Bank bis CHF 1 Mio., Gründung explizit"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Investitionsfinanzierung"
+        },
+        "P5": {
+          "rating": "W",
+          "text": "Wachstumsinvestitionen"
+        },
+        "P6": {
+          "rating": "W",
+          "text": "Nachfolgefinanzierung"
+        }
+      }
+    },
+    {
+      "id": "bank",
+      "name": "Banken (LUKB, Raiffeisen, weitere)",
+      "short": "Banken",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "beide",
+      "inOldMatrix": "ja (leer)",
+      "isNew": false,
+      "remark": "In v1 leer. LUKB-Kreditangebot für Gründer fehlt auch in ITZ-Map (nur Zukunftspreis)",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "W",
+          "text": "Kapitaleinzahlungskonto, Firmenkonto"
+        },
+        "P3a": {
+          "rating": "K",
+          "text": "Start-/Betriebskredite (oft mit BG)"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Betriebs-/Investitionskredite"
+        },
+        "P5": {
+          "rating": "W",
+          "text": "Wachstumsfinanzierung"
+        },
+        "P6": {
+          "rating": "W",
+          "text": "Nachfolgefinanzierung"
+        }
+      }
+    },
+    {
+      "id": "csem",
+      "name": "CSEM (Swiss Center for Electronics and Microtechnology), Standort Alpnach",
+      "short": "CSEM",
+      "group": "Bestehende Akteure (aus Matrix v1, überarbeitet)",
+      "ebene": [
+        "ZCH"
+      ],
+      "ebeneOriginal": "ZCH (Alpnach OW); CH-weit tätig",
+      "segment": "Startup (DeepTech) / KMU",
+      "inOldMatrix": "Zeile angelegt (leer) – ergänzt 11/2026",
+      "isNew": true,
+      "remark": "Ergänzt per Internetrecherche (Stand 11/2026). Standort Alpnach seit 2001 (Fokus Industrie 4.0 & Life-Science-Technologien), Kooperationspartner der WFL. Spin-off-Programm setzt auf CSEM-Technologie – nicht für externe Ideen ohne CSEM-Bezug. Beträge des Start-up Booster Grants und Fristen bei CSEM verifizieren.",
+      "remarkType": "zu verifizieren",
+      "sources": [
+        {
+          "label": "CSEM – Spin-off Program / Start-up Booster Grant",
+          "url": "https://www.csem.ch/en/start-up-booster-grant/"
+        },
+        {
+          "label": "CSEM – ACCELERATE Program (Annual Report 2024)",
+          "url": "https://www.csem.ch/en/annual-report/2024/accelerate-program/"
+        },
+        {
+          "label": "CSEM – Digital Journey 2026",
+          "url": "https://www.csem.ch/en/news/digitaljourney2026/"
+        },
+        {
+          "label": "Lucerne Business – Innovationspartner CSEM",
+          "url": "https://lucerne-business.com/en/blog/innovation-partner-csem-from-vision-to-technology-13132"
+        },
+        {
+          "label": "CSEM – 25 Jahre in der Zentralschweiz",
+          "url": "https://www.csem.ch/en/press/25-years-of-csem-in-central-switzerland/"
+        }
+      ],
+      "cells": {
+        "P0": {
+          "rating": "R",
+          "text": "Events, z. B. 25 Jahre CSEM Alpnach; Technologieanlässe Zentralschweiz"
+        },
+        "P1": {
+          "rating": "W",
+          "text": "Spin-off Program: bis 2 Jahre lohngestütztes Fellowship, um CSEM-Technologie zu einem Deep-Tech-Unternehmen zu entwickeln (Start-up Booster Grant, bis ca. 5 pro Jahr)"
+        },
+        "P2": {
+          "rating": "R",
+          "text": "Anerkennung als offizielles CSEM-Spin-off (Validierung durch CSEM-Management)"
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Start-up Elevate: 5 gegründete Startups (pre-Series A) erhalten je CHF 50K technische Unterstützung"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Technologieentwicklung & -transfer für KMU; Digital Journey Award bis CHF 100K Entwicklungsleistung (KMU < 250 MA)"
+        },
+        "P5": {
+          "rating": "R",
+          "text": "Unterstützung von Deep-Tech-Startups beim Skalieren (Technologie, Industrialisierung)"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "rav",
+      "name": "RAV / Arbeitslosenversicherung (Kanton LU)",
+      "short": "RAV",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU (Bundesrecht)",
+      "segment": "Neuunternehmer",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Gesuch innert 19 Wochen kontrollierter Arbeitslosigkeit – Fristen sind Beratungsthema",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "K",
+          "text": "Planungsphase bis 90 Tage mit Taggeldern"
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Bürgschaftsgarantie bis CHF 1 Mio. via BG"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "ahv",
+      "name": "Ausgleichskasse Luzern (AHV)",
+      "short": "Ausgleichskasse LU",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "beide",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Häufigster Stolperstein bei Einzelfirmen",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "K",
+          "text": "Anerkennung Selbständigkeit, AHV-Anmeldung"
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "beh",
+      "name": "Behörden: Handelsregisteramt LU, EasyGov, ESTV (MWST)",
+      "short": "Behörden (HR, EasyGov, ESTV)",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU",
+        "CH"
+      ],
+      "ebeneOriginal": "LU/CH",
+      "segment": "beide",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "K",
+          "text": "Eintrag, MWST-Anmeldung, Behördengänge"
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "W",
+          "text": "Löschung, Umstrukturierung"
+        }
+      }
+    },
+    {
+      "id": "treu",
+      "name": "Treuhand & Notariat (lokal)",
+      "short": "Treuhand & Notariat",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "beide",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Keine kuratierte Partnerliste im Ökosystem (bereits in v1 erkannt)",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "R",
+          "text": "Rechtsformwahl"
+        },
+        "P2": {
+          "rating": "K",
+          "text": "Statuten, Buchhaltung, Versicherungen, Lohn"
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Steuern, Abschluss"
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "W",
+          "text": "Nachfolge, Sanierung"
+        }
+      }
+    },
+    {
+      "id": "vci",
+      "name": "Venture Club Innerschweiz",
+      "short": "Venture Club Innerschweiz",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "ZCH"
+      ],
+      "ebeneOriginal": "ZCH",
+      "segment": "Startup",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Das eigentliche regionale Investorennetzwerk – fehlte in v1",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "K",
+          "text": "Angel-Runden für Innerschweizer Startups"
+        },
+        "P4": {
+          "rating": "R",
+          "text": "Smart Money / Mentoring"
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "aks",
+      "name": "Albert Koechlin Stiftung",
+      "short": "Albert Koechlin Stiftung",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU",
+        "ZCH"
+      ],
+      "ebeneOriginal": "LU, SZ, OW, NW, UR",
+      "segment": "beide",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Angaben laut ITZ-Map",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Preise bis CHF 100K, Darlehen individuell"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "R",
+          "text": "Darlehen"
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "zks",
+      "name": "Zimmermann-KMU-Stiftung",
+      "short": "Zimmermann-KMU-Stiftung",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "Neuunternehmer / KMU",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "KMU LU mit max. 50 MA (laut ITZ-Map)",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Förderung Gründungsphase"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Wachstums-/Investitionsphase"
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "preise",
+      "name": "Preise: LUKB Zukunftspreis, Zentralschweizer Neuunternehmerpreis, IHK-Innovationspreis",
+      "short": "Preise (LUKB, NUP, IHK)",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU",
+        "ZCH"
+      ],
+      "ebeneOriginal": "LU/ZCH",
+      "segment": "beide",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "W",
+          "text": "Sichtbarkeit, Vorbilder"
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Preisgelder (LUKB CHF 150K gesamt; IHK CHF 10K)"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "R",
+          "text": "Reputation"
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "sipc",
+      "name": "Switzerland Innovation Park Central",
+      "short": "SIP Central",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "ZCH"
+      ],
+      "ebeneOriginal": "ZCH",
+      "segment": "Startup (Tech)",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Vergleichbar mit Technopark – Abgrenzung klären",
+      "remarkType": "zu verifizieren",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "R",
+          "text": "Technologieprojekte"
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Büros, Labore, HSLU-Kooperation"
+        },
+        "P5": {
+          "rating": "R",
+          "text": "Wachstumsflächen"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "ihk",
+      "name": "IHK Zentralschweiz",
+      "short": "IHK Zentralschweiz",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "ZCH"
+      ],
+      "ebeneOriginal": "ZCH",
+      "segment": "beide",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "R",
+          "text": "Innovationspreis"
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "R",
+          "text": "Netzwerk"
+        },
+        "P5": {
+          "rating": "W",
+          "text": "Exportdokumente (Ursprungszeugnisse, Carnets)"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "kgv",
+      "name": "KMU- und Gewerbeverband Kanton Luzern",
+      "short": "KMU- und Gewerbeverband LU",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "Neuunternehmer",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Rolle für Gewerbe-Gründungen prüfen",
+      "remarkType": "zu verifizieren",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "R",
+          "text": "Branchenverbände, Lehrbetrieb"
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Netzwerk Gewerbe"
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "?",
+          "text": "Nachfolge"
+        }
+      }
+    },
+    {
+      "id": "lif",
+      "name": "Luzern Innovation Foundation (geplant)",
+      "short": "Luzern Innovation Foundation",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "KMU, auch Startups",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Regierungsrat beantragte 04/2026 CHF 24 Mio. (2026–2029) inkl. Koordination der Partner – Stand Kantonsrat prüfen",
+      "remarkType": "zu verifizieren",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "?",
+          "text": "Machbarkeitsstudien"
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "?",
+          "text": "Mitfinanzierung Umsetzungsprojekte"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "?",
+          "text": "Innovationsprojekte KMU"
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "nrp",
+      "name": "NRP via Kanton Luzern",
+      "short": "NRP (Kanton LU)",
+      "group": "Neu: regionale Akteure (LU / Zentralschweiz)",
+      "ebene": [
+        "LU"
+      ],
+      "ebeneOriginal": "LU",
+      "segment": "Projekte",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "R",
+          "text": "eher Projekt- als Firmenförderung"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "R",
+          "text": "regionale Innovationsprojekte"
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "inno",
+      "name": "Innosuisse",
+      "short": "Innosuisse",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "Startup (science-based)",
+      "inOldMatrix": "nur in Zusammenfassung",
+      "isNew": true,
+      "remark": "Coaching-Beträge verifiziert (innosuisse.admin.ch)",
+      "remarkType": "verifiziert",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "W",
+          "text": "Trainings (via Venturelab)"
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "K",
+          "text": "Initial Coaching ≤ CHF 10K, Core ≤ 50K; Innovationsprojekte"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Core Coaching (bis 36 Mt.)"
+        },
+        "P5": {
+          "rating": "K",
+          "text": "Scale-up Coaching ≤ CHF 75K"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "vlab",
+      "name": "Venturelab / Venture Kick",
+      "short": "Venturelab / Venture Kick",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "Startup",
+      "inOldMatrix": "nur in Zusammenfassung",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "W",
+          "text": "Trainings, TOP 100"
+        },
+        "P1": {
+          "rating": "W",
+          "text": "Entrepreneurship-Module"
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "K",
+          "text": "Venture Kick bis CHF 150K"
+        },
+        "P3b": {
+          "rating": "W",
+          "text": "Investorenzugang"
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "R",
+          "text": "Venture Leaders"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "grs",
+      "name": "Gebert Rüf Stiftung",
+      "short": "Gebert Rüf Stiftung",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "Startup (FH)",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": "Direkt relevant für HSLU-Spin-offs",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "CHF 25–150K für FH-Startups (HSLU)"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "ige",
+      "name": "IGE (Institut für Geistiges Eigentum)",
+      "short": "IGE",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "beide",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "R",
+          "text": "begleitete Patentrecherche"
+        },
+        "P2": {
+          "rating": "W",
+          "text": "Marken / IP-Schutz"
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "saffa",
+      "name": "BG-SAFFA",
+      "short": "BG-SAFFA",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "Gründerinnen",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Bürgschaft bis CHF 1 Mio. (≥ 50 % Frauenhand)"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "tf",
+      "name": "Technologiefonds",
+      "short": "Technologiefonds",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "CleanTech",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "R",
+          "text": "für marktnahe CleanTech"
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "W",
+          "text": "Bürgschaft bis CHF 3 Mio."
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "angels",
+      "name": "Angel-Netzwerke national (SICTIC, BAS, Swisspreneur, StartAngels)",
+      "short": "Angel-Netzwerke national",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "Startup",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "K",
+          "text": "CHF 10K–2M pro Runde"
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "vc",
+      "name": "VC / Corporate VC / Family Offices",
+      "short": "VC / CVC / Family Offices",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "Startup",
+      "inOldMatrix": "nur Bemerkung",
+      "isNew": true,
+      "remark": "Kein VC mit Sitz LU ist kein Engpass an sich – Engpass ist Zugang zum Dealflow",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "W",
+          "text": "Seed bis Series A"
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "K",
+          "text": "Series A+"
+        },
+        "P6": {
+          "rating": "R",
+          "text": "Exit"
+        }
+      }
+    },
+    {
+      "id": "crowd",
+      "name": "Crowdfunding / Crowdinvesting",
+      "short": "Crowdfunding / Crowdinvesting",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "beide",
+      "inOldMatrix": "nur Zusammenfassung",
+      "isNew": true,
+      "remark": "v1 vermischt Reward-Crowdfunding (wemakeit) mit Crowdinvesting (CONDA)",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "W",
+          "text": "Marktvalidierung via Vorverkauf"
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "W",
+          "text": "Reward-Crowdfunding"
+        },
+        "P3b": {
+          "rating": "R",
+          "text": "Crowdinvesting"
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "–",
+          "text": ""
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "pilot",
+      "name": "Corporate-Pilotprogramme (Kickstart, Tenity)",
+      "short": "Corporate-Pilotprogramme",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "Startup",
+      "inOldMatrix": "nur Zusammenfassung",
+      "isNew": true,
+      "remark": "F10 heisst heute Tenity",
+      "remarkType": "Bemerkung",
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "K",
+          "text": "bezahlte Piloten mit Konzernen"
+        },
+        "P5": {
+          "rating": "W",
+          "text": "Konzerne als Skalierungskanal"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "sge",
+      "name": "Switzerland Global Enterprise (S-GE)",
+      "short": "S-GE",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "beide",
+      "inOldMatrix": "nur Zusammenfassung",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "K",
+          "text": "Exportberatung, Swiss Business Hubs"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "dtn",
+      "name": "Deep Tech Nation Switzerland Foundation",
+      "short": "Deep Tech Nation",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "Startup (DeepTech, Scale-up)",
+      "inOldMatrix": "Zeile angelegt (leer) – ergänzt 11/2026",
+      "isNew": true,
+      "remark": "Ergänzt per Internetrecherche (Stand 11/2026). 2024 von UBS und Swisscom gegründete gemeinnützige Stiftung; Ziel: CHF 50 Mrd. in 10 Jahren für Deep-Tech-Startups/Scale-ups mobilisieren. Legt keine eigenen Fonds auf. Für die meisten Luzerner Gründungen erst ab Scale-up-Phase relevant. Teilnahmebedingungen Project Switzerland (inkl. Kostenfreiheit) verifizieren.",
+      "remarkType": "zu verifizieren",
+      "sources": [
+        {
+          "label": "Swisscom – Deep Tech Nation Switzerland",
+          "url": "https://www.swisscom.ch/de/about/news/2024/06/06-deep-tech-nation-switzerland.html"
+        },
+        {
+          "label": "Venture Kick – Partnerschaft mit Deep Tech Nation",
+          "url": "https://www.venturekick.ch/Deep-Tech-Nation-Switzerland-Partners-with-Venture-Kick-to-Support-Swiss-Leading-Technologies"
+        },
+        {
+          "label": "USI – Project Switzerland: erste Kohorte (04/2026)",
+          "url": "https://www.startup.usi.ch/it/feeds/41754"
+        },
+        {
+          "label": "Blick – Einhörner suchen ihre Nachfolger",
+          "url": "https://www.blick.ch/wirtschaft/neues-programm-einhoerner-suchen-ihre-nachfolger-diese-mentoren-beraten-auserkorene-start-ups-kostenlos-id21495096.html"
+        }
+      ],
+      "cells": {
+        "P0": {
+          "rating": "R",
+          "text": "Sensibilisierung & Advocacy für Deep Tech, bessere Rahmenbedingungen für Investoren"
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "R",
+          "text": "Partner im Venture-Kick-Konsortium (indirekte Förderung, kein eigenes Gesuch)"
+        },
+        "P3b": {
+          "rating": "R",
+          "text": "Keine eigenen Fonds – Mobilisierung von Kapital über Partner und Rahmenbedingungen"
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "W",
+          "text": "Project Switzerland: 12 Monate Mentoring durch > 20 Serial Entrepreneurs / Unicorn-Gründer; Kriterien u. a. Umsatz > CHF 2 Mio., ≥ 40 % Wachstum p. a."
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    },
+    {
+      "id": "serv",
+      "name": "SERV (Exportrisikoversicherung)",
+      "short": "SERV",
+      "group": "Neu: nationale Akteure, die in Luzern sichtbar vermittelt werden müssten",
+      "ebene": [
+        "CH"
+      ],
+      "ebeneOriginal": "CH",
+      "segment": "beide",
+      "inOldMatrix": "nein – NEU",
+      "isNew": true,
+      "remark": null,
+      "remarkType": null,
+      "cells": {
+        "P0": {
+          "rating": "–",
+          "text": ""
+        },
+        "P1": {
+          "rating": "–",
+          "text": ""
+        },
+        "P2": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3a": {
+          "rating": "–",
+          "text": ""
+        },
+        "P3b": {
+          "rating": "–",
+          "text": ""
+        },
+        "P4": {
+          "rating": "–",
+          "text": ""
+        },
+        "P5": {
+          "rating": "W",
+          "text": "Absicherung Exportrisiken"
+        },
+        "P6": {
+          "rating": "–",
+          "text": ""
+        }
+      }
+    }
+  ]
+}
